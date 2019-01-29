@@ -1,5 +1,10 @@
  [requires]
  #Poco/1.9.0@pocoproject/stable
+boost/1.69.0@conan/stable
 
- [generators]
- cmake
+[options]
+boost:shared=True # False
+# Take a look for all available options in conanfile.py
+
+[generators]
+cmake
